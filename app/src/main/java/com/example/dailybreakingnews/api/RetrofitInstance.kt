@@ -1,6 +1,6 @@
 package com.example.dailybreakingnews.api
 
-import com.example.dailybreakingnews.Utils.Constants.Companion.BASE_URL
+import com.example.dailybreakingnews.utils.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -6,7 +6,7 @@
     app:startDestination="@id/breakingNewsFragment">
     <fragment
         android:id="@+id/breakingNewsFragment"
-        android:name="com.androiddevs.mvvmnewsapp.ui.BreakingNewsFragment"
+        android:name="com.example.dailybreakingnews.ui.BreakingNewsFragment"
         android:label="BreakingNewsFragment" >
         <action
             android:id="@+id/action_breakingNewsFragment_to_articleNewsFragment"
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchNewsFragment"
-        android:name="com.androiddevs.mvvmnewsapp.ui.SearchNewsFragment"
+        android:name="com.example.dailybreakingnews.ui.SearchNewsFragment"
         android:label="SearchNewsFragment" >
         <action
             android:id="@+id/action_searchNewsFragment_to_articleNewsFragment"
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/savedNewsFragment"
-        android:name="com.androiddevs.mvvmnewsapp.ui.SavedNewsFragment"
+        android:name="com.example.dailybreakingnews.ui.SavedNewsFragment"
         android:label="SavedNewsFragment" >
         <action
             android:id="@+id/action_savedNewsFragment_to_articleNewsFragment"
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/articleNewsFragment"
-        android:name="com.androiddevs.mvvmnewsapp.ui.ArticleNewsFragment"
+        android:name="com.example.dailybreakingnews.ui.ArticleNewsFragment"
         android:label="ArticleNewsFragment"
         app:enterAnim="@anim/slide_in_right"
         app:exitAnim="@anim/slide_out_left"
