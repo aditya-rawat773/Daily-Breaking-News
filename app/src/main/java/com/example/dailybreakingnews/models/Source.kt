@@ -1,4 +1,4 @@
-package com.example.dailybreakingnews
+package com.example.dailybreakingnews.models
 
 data class Source(
     val id: Any,
