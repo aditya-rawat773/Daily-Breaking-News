@@ -6,6 +6,7 @@ import android.view.View
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dailybreakingnews.MainActivity
 import com.example.dailybreakingnews.R
@@ -43,6 +44,17 @@ class SearchNewsFragment: Fragment(R.layout.fragment_search_news) {
                     viewModel.searchNews(editable.toString())
                 }
             }
+        }
+
+        newsAdapter.setOnItemClickListener {
+
+            val bundle = Bundle().apply {
+                putSerializable("article",it)
+            }
+            findNavController().navigate(
+                    R.id.action_searchNewsFragment_to_articleNewsFragment,
+                    bundle
+            )
         }
 
         viewModel.searchNews.observe(viewLifecycleOwner, Observer {
